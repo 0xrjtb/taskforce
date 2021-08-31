@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import styles from '../styles/Home.module.css'
@@ -21,9 +22,9 @@ export default function Home() {
         <Main/>
       </main>
       {/* Footer */}
-      <footer className={styles.footer}>
-        <a>Created with ❤ by GMinor</a>
-      </footer>
+      <div>
+        <Footer/>
+      </div>
     </div>
   )
 }
