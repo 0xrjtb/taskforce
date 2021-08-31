@@ -1,3 +1,4 @@
+import Head from "next/head";
 import CreatorHeader from "../components/CreatorHeader";
 import Footer from "../components/Footer";
 import styles from '../styles/Home.module.css'
@@ -6,6 +7,10 @@ import styles from '../styles/Home.module.css'
 function creator() {
     return (
         <div className={styles.container}>
+            <Head>
+                <title>Creator</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             {/* Header */}
             <CreatorHeader/>
             {/* Body */}
