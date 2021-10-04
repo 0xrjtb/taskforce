@@ -7,9 +7,9 @@ function Header() {
             {/* Left */}
             <Link href="/">
             <div className="relative flex items-center h-10 mr-0 md:mr-96
-            cursor-pointer my-auto hover:scale-105 transform transition duration-150 ease-out">
-                <a className="text-xl text-blue-600 font-semibold">Task</a>
-                <a className="text-xl text-gray-800 font-semibold">Force</a>
+             my-auto">
+                <a className="text-3xl text-blue-600 font-semibold">Task</a>
+                <a className="text-3xl text-gray-800 font-semibold">Force</a>
             </div>
             </Link>
 

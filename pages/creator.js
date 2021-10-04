@@ -1,12 +1,15 @@
 import Head from "next/head";
 import CreatorHeader from "../components/CreatorHeader";
 import Footer from "../components/Footer";
-import styles from '../styles/Home.module.css'
+import TaskCards from "../components/TaskCards";
+import TaskCards1 from "../components/TaskCards1";
+import TaskCards2 from "../components/TaskCards2";
+import TaskCards3 from "../components/TaskCards3";
 
 
 function creator() {
     return (
-        <div className="max-w-screen-xl mx-auto px-3 sm:px-5 lg:px-6">
+        <div className="container-fluid mx-auto px-3 sm:px-5 lg:px-6 bg-gray-50">
             <Head>
                 <title>Creator</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -14,95 +17,46 @@ function creator() {
             {/* Header */}
             <CreatorHeader/>
             {/* Body */}
-            <main>
-            <div className="mt-7 mb-7">
+            <main class="mb-36">
+            <div className="mt-7 mb-7 flex justify-center">
                 <div className="flex flex-3">
                     <div className="mr-10 p-3 bg-white font-semibold text-xl border-2 rounded-md shadow-sm hover:shadow-md hover:border-blue-400 hover:scale-105 transform transition duration-150 ease-out">
-                        <button>Create a task</button>
+                        <button>New task</button>
                     </div>
                     <div className="ml-10 p-3 bg-white font-semibold text-xl border-2 rounded-md shadow-sm hover:shadow-md hover:border-blue-400 hover:scale-105 transform transition duration-150 ease-out">
                         <button>My community</button>
                     </div>
                 </div>
             </div>
+            <div class="w-3/4 mx-auto bg-gray-100 border-4 border-gray-600 rounded-md">
+                <div className="grid grid-cols-4 p-3 space-x-3 font-bold text-blue-600">
+                    <div class="flex justify-center border-4 border-gray-200 rounded-md p-2 bg-white">
+                        Task
+                    </div>
+                    <div class="flex justify-center border-4 border-gray-200 rounded-md p-2  bg-white">
+                        Status
+                    </div>
+                    <div class="flex justify-center border-4 border-gray-200 rounded-md p-2  bg-white">
+                        No. of submissions
+                    </div>
+                    <div class="flex justify-center border-4 border-gray-200 rounded-md p-2 bg-white">
+                        Action
+                    </div>
+                </div>
 
-            <div className="flex flex-4 space-x-44 font-bold text-blue-600 border-2 border-gray-500 p-3 rounded-md">
                 <div>
-                    Task
+                    {/* TaskCard */}
+                    <TaskCards/>
+                    <TaskCards1/>
+                    <TaskCards2/>
+                    <TaskCards3/>
                 </div>
-                <div>
-                    Status
-                </div>
-                <div>
-                    No. of submissions
-                </div>
-                <div>
-                    Action
-                </div>
-            </div>
-            <div className="mb-40">
-                <div className="mb-5 flex flex-4 bg-white space-x-44 text-gray-500 border-4 p-3 rounded-md hover:shadow-lg  hover:text-black">
-                    <div className="">
-                        Background Music
-                    </div>
-                    <div>
-                        Active
-                    </div>
-                    <div>
-                        254
-                    </div>
-                    <div className="flex flex-2">
-                        <div className="border-2 border-gray-700 p-1 text-blue-600 mr-2 rounded-md hover:scale-105 transform transition duration-150 ease-out">
-                            <p>Review</p>
-                        </div>
-                        <div className="border-2 border-gray-700 p-1 text-red-600 mr-2 rounded-md hover:scale-105 transform transition duration-150 ease-out">
-                            <p>End Task</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="mb-5 flex flex-4 bg-white space-x-48 text-gray-500 border-4 p-3 rounded-md hover:shadow-lg  hover:text-black">
-                    <div className="">
-                        Thumbnail art
-                    </div>
-                    <div>
-                        Active
-                    </div>
-                    <div>
-                        105
-                    </div>
-                    <div className="flex flex-2">
-                        <div className="border-2 border-gray-700 p-1 text-blue-600 mr-2 rounded-md hover:scale-105 transform transition duration-150 ease-out">
-                            <p>Review</p>
-                        </div>
-                        <div className="border-2 border-gray-700 p-1 text-red-600 mr-2 rounded-md hover:scale-105 transform transition duration-150 ease-out">
-                            <p>End Task</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="flex flex-4 bg-white space-x-44 text-gray-500 border-4 p-3 rounded-md hover:shadow-lg  hover:text-black">
-                    <div className="">
-                        Paid promotion
-                    </div>
-                    <div>
-                        Closed
-                    </div>
-                    <div>
-                        254
-                    </div>
-                    <div className="flex flex-2">
-                        <div className="border-2 border-gray-700 p-1 text-blue-600 mr-2 rounded-md hover:scale-105 transform transition duration-150 ease-out">
-                            <p>Review</p>
-                        </div>
-                        <div className="border-2 border-gray-700 p-1 text-gray-600 mr-2 rounded-md">
-                            <p>End Task</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div> 
             </main>
-            
-            {/* Footer */}
-            <Footer/>
+             {/* Footer */}
+            <div class="flex justify-center mt-200px">
+                <Footer/>
+            </div>
         </div>
     )
 }

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function Main() {
     return (
-        <div className="relative h-[300px] sm:h-[400px] lg:h-[500-px] xl:h-[600px] 2xl:h-[700px] py-36">
+        <div className="relative h-[300px] sm:h-[400px] lg:h-[500-px] xl:h-[600px] 2xl:h-[700px] mt-14 mb-56">
          <Link href="/creator">
          <div className="flex flex-1 border-2 p-2 rounded-md max-w-sm mt-10 cursor-pointer bg-white
           hover:border-blue-400 shadow-sm hover:shadow-lg hover:scale-105 transform transition duration-150 ease-out">
