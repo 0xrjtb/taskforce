@@ -1,15 +1,23 @@
+import Head from "next/head";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
+import MemberHeader from "../components/MemberHeader";
 import styles from '../styles/Home.module.css'
 
 function member() {
     return (
         <div className={styles.container}>
+             <Head>
+                <title>Member</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             {/* Header */}
-            <Header/>
+            <MemberHeader/>
             {/* Body */}
-            <div className="mt-40 mb-40">
-                <p>Member</p>
+            <div className="flex flex-3">
+                {/* Middle */}
+                <div class="container flex flex-3 border-r-4 bg-white">
+                   <div></div>
+                </div>
             </div>
             {/* Footer */}
             <Footer/>

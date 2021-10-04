@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 
 function creator() {
     return (
-        <div className={styles.container}>
+        <div className="max-w-screen-xl mx-auto px-3 sm:px-5 lg:px-6">
             <Head>
                 <title>Creator</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -14,6 +14,7 @@ function creator() {
             {/* Header */}
             <CreatorHeader/>
             {/* Body */}
+            <main>
             <div className="mt-7 mb-7">
                 <div className="flex flex-3">
                     <div className="mr-10 p-3 bg-white font-semibold text-xl border-2 rounded-md shadow-sm hover:shadow-md hover:border-blue-400 hover:scale-105 transform transition duration-150 ease-out">
@@ -27,7 +28,7 @@ function creator() {
 
             <div className="flex flex-4 space-x-44 font-bold text-blue-600 border-2 border-gray-500 p-3 rounded-md">
                 <div>
-                    Assignment
+                    Task
                 </div>
                 <div>
                     Status
@@ -98,6 +99,8 @@ function creator() {
                     </div>
                 </div>
             </div>
+            </main>
+            
             {/* Footer */}
             <Footer/>
         </div>

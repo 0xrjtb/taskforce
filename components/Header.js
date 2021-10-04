@@ -3,8 +3,7 @@ import Link from 'next/link'
 
 function Header() {
     return (
-        <header className=" sticky top-0 z-50 grid
-        grid-cols-2 bg-white shadow-md w-max p-2 md:px-10">
+        <header className="sticky top-0 z-50 grid  grid-cols-2 bg-white shadow-md p-5 md:px-10">
             {/* Left */}
             <Link href="/">
             <div className="relative flex items-center h-10 mr-0 md:mr-96
