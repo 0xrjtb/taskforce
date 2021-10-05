@@ -10,13 +10,13 @@ function MemberHeader() {
             <Link href="/">
             <div className="relative flex items-center h-10 mr-0 md:mr-96
             cursor-pointer my-auto hover:scale-105 transform transition duration-150 ease-out">
-                <a className="text-xl text-blue-600 font-semibold">Task</a>
-                <a className="text-xl text-gray-800 font-semibold">Force</a>
+                <a className="text-3xl text-blue-600 font-semibold">Task</a>
+                <a className="text-3xl text-gray-800 font-semibold">Force</a>
             </div>
             </Link>
             
             {/* Center */}
-            <div className="flex flex-2">
+            <div className="flex flex-2 justify-center">
                 <div>
                     <SearchCircleIcon className="h-10 mr-2 mt-2 text-gray-500 border-2 rounded-full hover:border-blue-500 cursor-pointer"/>
                 </div>

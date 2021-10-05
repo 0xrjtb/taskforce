@@ -28,18 +28,18 @@ function creator() {
                     </div>
                 </div>
             </div>
-            <div class="w-3/4 mx-auto bg-gray-100 border-4 border-gray-600 rounded-md">
+            <div className="w-3/4 mx-auto bg-gray-100 border-4 border-gray-600 rounded-md">
                 <div className="grid grid-cols-4 p-3 space-x-3 font-bold text-blue-600">
-                    <div class="flex justify-center border-4 border-gray-200 rounded-md p-2 bg-white">
+                    <div className="flex justify-center border-4 border-gray-200 rounded-md p-2 bg-white">
                         Task
                     </div>
-                    <div class="flex justify-center border-4 border-gray-200 rounded-md p-2  bg-white">
+                    <div className="flex justify-center border-4 border-gray-200 rounded-md p-2  bg-white">
                         Status
                     </div>
-                    <div class="flex justify-center border-4 border-gray-200 rounded-md p-2  bg-white">
+                    <div className="flex justify-center border-4 border-gray-200 rounded-md p-2  bg-white">
                         No. of submissions
                     </div>
-                    <div class="flex justify-center border-4 border-gray-200 rounded-md p-2 bg-white">
+                    <div className="flex justify-center border-4 border-gray-200 rounded-md p-2 bg-white">
                         Action
                     </div>
                 </div>
@@ -54,7 +54,7 @@ function creator() {
             </div> 
             </main>
              {/* Footer */}
-            <div class="flex justify-center mt-200px">
+            <div className="flex justify-center mt-200px">
                 <Footer/>
             </div>
         </div>
