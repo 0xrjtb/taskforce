@@ -15,11 +15,11 @@ export default function Home() {
       {/* Header */}
         <Header/>
       {/* Main */}
-      <main class="flex justify-center mx-auto px-8 sm:px-16">
+      <main className="flex justify-center mx-auto px-8 sm:px-16">
         <Main/>
       </main>
       {/* Footer */}
-      <div class="flex justify-center">
+      <div className="flex justify-center">
         <Footer/>
       </div>
     </div>
