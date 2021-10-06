@@ -17,7 +17,7 @@ function creator() {
             {/* Header */}
             <CreatorHeader/>
             {/* Body */}
-            <main class="mb-36">
+            <main className="mb-36">
             <div className="mt-7 mb-7 flex justify-center">
                 <div className="flex flex-3">
                     <div className="mr-10 p-3 bg-white font-semibold text-xl border-2 rounded-md shadow-sm hover:shadow-md hover:border-blue-400 hover:scale-105 transform transition duration-150 ease-out">
